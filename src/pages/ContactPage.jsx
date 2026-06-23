@@ -40,10 +40,10 @@ export default function ContactPage() {
                   +1-208-980-0654
                 </p>
                 <p className="hover:text-[#7CFC00] transition-colors cursor-pointer">
-                  info@onepresssolutions
+                  info@onepresssolutions.com
                 </p>
                 <p className="text-white-500 max-w-xs">
-                  74, Commercial Broadway, Paragon City, Lahore, 54000
+                26 Bradford Ln, Oak Brook, IL 60523, USA
                 </p>
               </div>
             </div>

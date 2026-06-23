@@ -75,7 +75,7 @@ export default function Footer() {
         {/* Column 3: Contact */}
         <div>
           <h3 className="text-white font-bold mb-6 uppercase text-xs tracking-widest">Contact Us</h3>
-          <p className="mb-4 text-sm">74, Commercial Broadway, Paragon City, Lahore, 54000</p>
+          <p className="mb-4 text-sm">26 Bradford Ln, Oak Brook, IL 60523, USA</p>
           <p className="mb-2 font-bold text-white text-lg">+1-208-980-0654</p>
           <Link to="/contact" className="text-sm hover:text-[#7CFC00] underline decoration-gray-700 underline-offset-4 transition-all">
             info@onepresssolutions.com
