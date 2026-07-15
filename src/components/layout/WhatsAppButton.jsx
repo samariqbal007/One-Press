@@ -1,7 +1,7 @@
 import { FaWhatsapp } from "react-icons/fa";
 
 export default function WhatsAppButton() {
-  const whatsappUrl = "https://wa.me/3404683036";
+  const whatsappUrl = "https://wa.me/923404683036";
 
   const handleClick = () => {
     if (window.fbq) {
