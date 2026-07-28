@@ -1,39 +1,68 @@
-import React from 'react';
+import React from "react";
 
 const TEAM_MEMBERS = [
-  { name: "Amir Iqbal", role: "Founder & CEO", img: "/images/ceo.jpg"},
-  { name: "Jassica Oliver", role: "Researcher", img: "/images/research.jpg" },
-  { name: "Sherry", role: "Digital Marketer", img: "images/digitalmarketer.jpg" },
-  { name: "Sam", role: "Lead Developer", img: "images/developer.jpg" },
+  {
+    name: "Amir Iqbal",
+    role: "Founder & CEO",
+    img: "/images/Amir.png",
+  },
+  {
+    name: "Irtaza Arshad",
+    role: "Digital Marketing Head",
+    img: "/images/Irtaza.png",
+  },
+  {
+    name: "Samar Iqbal",
+    role: "Development Head",
+    img: "/images/samar.png",
+  },
 ];
 
 export default function TeamSection() {
   return (
-    <section className="py-28 px-6 bg-black text-white">
-      <div className="max-w-7xl mx-auto">
+    <section className="bg-black px-6 py-28 text-white">
+      <div className="mx-auto max-w-7xl">
         {/* Section Header */}
-        <div className="mb-16">
-          <p className="text-white-400 uppercase tracking-widest text-sm mb-4">Our Team</p>
-          <h2 className="text-4xl md:text-5xl font-bold">Meet the experts</h2>
+        <div className="mb-16 text-center">
+          <p className="mb-4 text-sm uppercase tracking-widest text-gray-400">
+            Our Team
+          </p>
+
+          <h2 className="text-4xl font-bold md:text-6xl">
+            Meet the experts
+          </h2>
         </div>
 
         {/* Team Grid */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
-          {TEAM_MEMBERS.map((member, i) => (
-            <div key={i} className="group cursor-pointer">
-              {/* Image Container */}
-              <div className="aspect-[3/4] bg-white-800 rounded-2xl mb-6 overflow-hidden">
-                <img 
-                  src={member.img} 
-                  alt={member.name} 
-                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" 
-                />
+        <div className="mx-auto max-w-6xl">
+          <div className="grid grid-cols-1 justify-items-center gap-10 sm:grid-cols-2 lg:grid-cols-3 lg:gap-12">
+            {TEAM_MEMBERS.map((member) => (
+              <div
+                key={member.name}
+                className="group w-full max-w-[360px] cursor-pointer"
+              >
+                {/* Image Container */}
+                <div className="mb-6 aspect-[4/5] overflow-hidden rounded-2xl bg-gray-800">
+                  <img
+                    src={member.img}
+                    alt={`${member.name} - ${member.role}`}
+                    className="h-full w-full object-cover object-top transition-transform duration-500 group-hover:scale-105"
+                  />
+                </div>
+
+                {/* Team Member Info */}
+                <div className="text-center">
+                  <h3 className="text-2xl font-bold">
+                    {member.name}
+                  </h3>
+
+                  <p className="mt-2 text-lg text-gray-400">
+                    {member.role}
+                  </p>
+                </div>
               </div>
-              {/* Info */}
-              <h3 className="text-xl font-bold">{member.name}</h3>
-              <p className="text-white-400">{member.role}</p>
-            </div>
-          ))}
+            ))}
+          </div>
         </div>
       </div>
     </section>
