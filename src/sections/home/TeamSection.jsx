@@ -8,8 +8,13 @@ const TEAM_MEMBERS = [
   },
   {
     name: "Irtaza Arshad",
-    role: "Digital Marketing Head",
+    role: "Business Development Head",
     img: "/images/Irtaza.png",
+  },
+  {
+    name: "Sheraz Chaudhary",
+    role: "Marketing Head",
+    img: "/images/sherry.jpeg",
   },
   {
     name: "Samar Iqbal",
@@ -34,12 +39,12 @@ export default function TeamSection() {
         </div>
 
         {/* Team Grid */}
-        <div className="mx-auto max-w-6xl">
-          <div className="grid grid-cols-1 justify-items-center gap-10 sm:grid-cols-2 lg:grid-cols-3 lg:gap-12">
+        <div className="mx-auto max-w-7xl">
+          <div className="grid grid-cols-1 justify-items-center gap-10 sm:grid-cols-2 lg:grid-cols-4 lg:gap-8">
             {TEAM_MEMBERS.map((member) => (
               <div
                 key={member.name}
-                className="group w-full max-w-[360px] cursor-pointer"
+                className="group w-full max-w-[320px] cursor-pointer"
               >
                 {/* Image Container */}
                 <div className="mb-6 aspect-[4/5] overflow-hidden rounded-2xl bg-gray-800">
